@@ -17,11 +17,10 @@ async def my_event_handler(event):
     url2 = url+y
     resp = requests.get(url=url2,)
     data = resp.json()
-    if len(data) != 0 :
-        title1 = data[0]['title']
-        url1 = data[0]['url']
-        replyy = f'''{title1}\n{url1}'''
-        await event.reply(replyy)
+    title1 = data[0]['title']
+    url1 = data[0]['url']
+    replyy = f'''{title1}\n{url1}'''
+    await event.reply(replyy)
 
 bot.start()
-if __name__ == "__main__": bot.run_until_disconnected()
+bot.run_until_disconnected()
