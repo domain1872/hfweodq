@@ -1,3 +1,4 @@
+from email import message
 from telethon.sync import TelegramClient, events
 api_id = 16852963
 api_hash = '1defca4e6e118cbe0b8c9f61913a7fbf'
@@ -13,6 +14,11 @@ async def my_event_handler(event):
     # if 'tmi' in event.raw_text:
     newtxt =event.raw_text
     ids = event.chat_id
+    print(type(type(event.entities)))
+    if type(event.entities) == list :
+        await bot.delete_messages(ids,event.message.id)
+    else :
+        pass
     if ids == -1001445924604 :
         url = 'https://toonmixindia.me/wp-json/wp/v2/search?per_page=5&type=post&search='
     else :
