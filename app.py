@@ -1,11 +1,12 @@
 from email import message
+from hashlib import new
 from telethon.sync import TelegramClient, events
 api_id = 16852963
 api_hash = '1defca4e6e118cbe0b8c9f61913a7fbf'
 bot_token = '5392254683:AAGDbmAUTousvvMwkEnCgwCKuFuVPmvRk_w'
 import requests
 
-
+prousers = [2054876812,1479609725,]
 
 # We have to manually call "start" if we want an explicit bot token
 bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
@@ -16,7 +17,10 @@ async def my_event_handler(event):
     ids = event.chat_id
     print(type(type(event.entities)))
     if type(event.entities) == list :
-        await bot.delete_messages(ids,event.message.id)
+        if event.message.peer_id.user_id in prousers :
+            pass
+        else :
+            await bot.delete_messages(ids,event.message.id)
     else :
         pass
     if ids == -1001445924604 :
