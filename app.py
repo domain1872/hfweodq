@@ -11,9 +11,9 @@ async def my_event_handler(event):
     if ids == -1001445924604 :
         url = 'https://toonmixindia.me/wp-json/wp/v2/search?per_page=5&type=post&search='
     elif ids == -1001226029329:
-        url = 'https://moviesrush.run/wp-json/wp/v2/search?per_page=5&type=post&search='
+        url = 'https://45.148.123.17/wp-json/wp/v2/search?per_page=5&type=post&search='
     elif ids == -1001470840039:
-        url = 'https://moviesrush.run/wp-json/wp/v2/search?per_page=5&type=post&search='
+        url = 'https://45.148.123.17/wp-json/wp/v2/search?per_page=5&type=post&search='
     else :
         url = 'https://coolsanime.me/wp-json/wp/v2/search?per_page=5&type=post&search='
     url2 = url+newtxt
