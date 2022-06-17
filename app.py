@@ -1,4 +1,4 @@
- api_id = 16852963 # Api ID From My.Telegram.Org
+api_id = 16852963 # Api ID From My.Telegram.Org
 api_hash = '1defca4e6e118cbe0b8c9f61913a7fbf' # Api Hash From My.Telegram.Org
 bot_token = '5392254683:AAGDbmAUTousvvMwkEnCgwCKuFuVPmvRk_w' # Bot Token From Bot Father
 site_url = 'https://toonmixindia.me/wp-json/wp/v2/search?per_page=5&type=post&search='
